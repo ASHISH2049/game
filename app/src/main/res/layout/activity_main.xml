@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Score: "
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/scoreCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="8"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/orangeBox"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="#E87A19" />
+
+        <TextView
+            android:id="@+id/blueBox"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="#11B5F6"/>
+
+        <TextView
+            android:id="@+id/yellowBox"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="#EFAF0F"/>
+
+        <TextView
+            android:id="@+id/greenBox"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="#5C8F22"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
